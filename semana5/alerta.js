@@ -1,1 +1,1 @@
-alert('Beijo do Ogro!');
+alert('Oi, pessoas!');
