@@ -4,19 +4,19 @@
 
 <h2>JavaScript if .. else</h2>
 
-<p>A time-based greeting:</p>
+<p>Cumprimento baseado em tempo:</p>
 
 <p id="demo"></p>
 
 <script>
     const time = new Date().getHours();
     let greeting;
-    if (time < 10) {
-        greeting = "Good morning";
-    } else if (time < 20) {
-        greeting = "Good day";
+    if (time < 12) {
+        greeting = "Bom dia!";
+    } else if (time <= 18) {
+        greeting = "Boa tarde!";
     } else {
-        greeting = "Good evening";
+        greeting = "Boa noite!";
     }
     document.getElementById("demo").innerHTML = greeting;
 </script>
