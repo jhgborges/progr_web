@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <body>
-
 <h2>JavaScript if .. else</h2>
-
 <p>Cumprimento baseado em tempo:</p>
-
 <p id="demo"></p>
-
 <script>
     const time = new Date().getHours();
     let greeting;
     if (time < 12) {
         greeting = "Bom dia!";
-    } else if (time <= 18) {
+    } else if (time < 18) {
         greeting = "Boa tarde!";
     } else {
         greeting = "Boa noite!";
+        document.body.style.backgroundImage = "url('bg.jpeg')";
     }
     document.getElementById("demo").innerHTML = greeting;
 </script>
-
 </body>
 </html>
