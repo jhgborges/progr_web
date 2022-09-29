@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estruturas condicionais e JS</title>
+</head>
+<body>
+<h1>Estruturas condicionais e JS</h1>
+<form action="#" onsubmit="return submitForm()">
+    <fieldset>
+        <legend> Checagem: </legend>
+        <label for="soma">Qual o resultado de 5 + 9? </label>
+        <input type="text" id="soma" name="soma"><br>
+        <input type="submit" value="Verifique">
+    </fieldset>
+</form>
+</body>
+</html>
+
+<script>
+    function submitForm() {
+        var checagem = document.getElementById("soma").value
+        if(checagem == 14)
+            alert("Acertou!")
+            else
+            alert("Que pena...")
+        return
+    }
+</script>
