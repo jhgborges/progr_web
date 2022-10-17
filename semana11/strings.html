@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Operações com strings</title>
+</head>
+<body>
+<div class="w3-container">
+    <h1> Operações com Strings: Universidade de Araraquara</h1>
+    <img src="uara.png" width="100%">
+    <h3>Contagem de caracteres</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="tamanho"></p>
+    </div>
+    <h3>Dividindo caracteres: eliminando os quatro primeiros caracteres</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="fatia"></p>
+    </div>
+    <h3>Trocando caracteres: Araraquara por Ibaté</h3>
+    <p>Cuidado: a função replace diferencia caracteres minúsculos de maiúsculos.</p>
+    <p>Experimente modificar a instrução para /ARARAQUARA/i </p>
+    <div class="w3-container w3-border w3-medium">
+        <p id="troca"></p>
+    </div>
+    <h3>Contagem de caracteres: os 5 caracteres após a posição 5</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="extrair"></p>
+    </div>
+    <h3>Buscando caracteres: a partir de qual posição aparece 'Araraquara'?</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="buscar"></p>
+    </div>
+    <h3>Convertendo tudo para maiúsculas</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="maiusculas"></p>
+    </div>
+    <h3>Convertendo tudo para minusculas</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="minusculas"></p>
+    </div>
+    <h3>Combinando texto</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="combinando"></p>
+    </div>
+    <h3>Desmembrando texto</h3>
+    <div class="w3-container w3-border w3-medium">
+        <p id="desmembrando"></p>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    let texto = "Universidade de Araraquara";
+    document.getElementById("tamanho").innerHTML = texto.length + " caracteres";
+    document.getElementById("fatia").innerHTML = texto.slice(4,(texto.length));
+    document.getElementById("troca").innerHTML = texto.replace("Araraquara","Ibaté");
+    document.getElementById("extrair").innerHTML = texto.substr(5,5);
+    document.getElementById("buscar").innerHTML = texto.indexOf("Araraquara");
+    document.getElementById("maiusculas").innerHTML = texto.toUpperCase();
+    document.getElementById("minusculas").innerHTML = texto.toLowerCase();
+    document.getElementById("combinando").innerHTML = texto.concat(" | Seu lugar");
+    const Array = texto.split(" ");
+    document.getElementById("desmembrando").innerHTML = Array[0].concat(Array[1]).concat(Array[2]);
+</script>
